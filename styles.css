@@ -183,6 +183,23 @@ body.dark-mode .section-intro {
   margin-bottom: 20px;
 }
 
+#about {
+  background: rgba(255, 255, 255, 0.1); /* Slight white overlay for contrast */
+  border-radius: 8px;
+  padding: 40px 20px;
+  opacity: 1 !important; /* Fallback for AOS */
+}
+
+#about h2,
+#about .about-text p {
+  color: var(--text-white);
+}
+
+body.dark-mode #about h2,
+body.dark-mode #about .about-text p {
+  color: var(--text-white);
+}
+
 .skills-grid, .projects-grid, .certifications-grid, .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
