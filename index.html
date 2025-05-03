@@ -11,15 +11,11 @@
   <meta property="og:image" content="images/og-image.jpg">
   <meta property="og:url" content="https://nexlify-tau.vercel.app/">
   <meta property="og:type" content="website">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com https://www.googletagmanager.com; style-src 'self' https://unpkg.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; form-action https://formspree.io;">
   <title>Samuel Mwendwa - Data Scientist</title>
-  <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preload" href="images/favicon.png" as="image">
   <link rel="icon" href="images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -27,7 +23,7 @@
     "name": "Samuel Mwendwa",
     "jobTitle": "Data Scientist",
     "url": "https://nexlify-tau.vercel.app/",
-    "sameAs": ["https://linkedin.com/in/your-username", "https://github.com/SamTech-crypto"]
+    "sameAs": ["https://linkedin.com/in/your-username", "https://github.com/your-username"]
   }
   </script>
 </head>
@@ -35,11 +31,6 @@
   <header>
     <nav class="navbar">
       <div class="logo">Samuel Mwendwa</div>
-      <button class="hamburger" aria-label="Toggle navigation">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke-width="2"/>
-        </svg>
-      </button>
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -51,11 +42,11 @@
       </div>
       <div class="theme-toggle">
         <button id="theme-toggle" aria-label="Toggle dark mode">
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <circle cx="12" cy="12" r="5"/>
             <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
           </svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
           </svg>
         </button>
@@ -75,10 +66,10 @@
   <section id="about" class="container" data-aos="fade-up">
     <h2>About Me</h2>
     <div class="about-content">
-      <img src="images/headshot-small.webp" srcset="images/headshot-small.webp 200w, images/headshot-large.webp 400w" alt="Samuel Mwendwa, Data Scientist" class="headshot" loading="lazy">
+      <img src="images/headshot.webp" alt="Samuel Mwendwa, Data Scientist" class="headshot" loading="lazy">
       <div class="about-text">
         <p>I’m a passionate data scientist with a knack for solving complex business problems through data. My focus is on helping SMEs leverage analytics to drive growth and efficiency.</p>
-        <p>With expertise in Python, machine learning, and BI tools, I build solutions that empower businesses to make informed decisions. When I’m not crunching numbers, I enjoy hiking and sharing insights through writing—check out my blog below!</p>
+        <p>With expertise in Python, machine learning, and BI tools, I build solutions that empower businesses to make informed decisions. I also love sharing insights through writing—check out my blog below!</p>
         <div class="resume-download">
           <a href="files/resume.pdf" class="cta-button" download>Download Resume</a>
         </div>
@@ -94,114 +85,136 @@
   <section id="skills" class="container" data-aos="fade-up">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <article class="skill-card">
+      <div class="skill-card">
         <h3>Data Analysis</h3>
         <p>Proficient in Python, SQL, and Excel for extracting insights from complex datasets.</p>
-      </article>
-      <article class="skill-card">
+      </div>
+      <div class="skill-card">
         <h3>Machine Learning</h3>
         <p>Experienced in building predictive models using scikit-learn, TensorFlow, and more.</p>
-      </article>
-      <article class="skill-card">
+      </div>
+      <div class="skill-card">
         <h3>Data Visualization</h3>
         <p>Expert in Tableau, Power BI, and matplotlib for creating impactful dashboards.</p>
-      </article>
-      <article class="skill-card">
+      </div>
+      <div class="skill-card">
         <h3>Financial Modeling</h3>
         <p>Skilled in financial forecasting and analysis, certified in FMVA and FP&A.</p>
-      </article>
+      </div>
     </div>
   </section>
 
   <section id="projects" class="container" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <article class="project-card" data-aos="fade-up">
-        <img src="images/mentorship-small.webp" srcset="images/mentorship-small.webp 300w, images/mentorship-large.webp 600w" alt="Mentorship Program Analysis" loading="lazy">
+      <div class="project-card" data-aos="fade-up">
+        <img src="images/mentorship.webp" alt="Mentorship Program Analysis" loading="lazy">
         <h3>Mentorship Program Analysis</h3>
         <p>Analyzed the impact of a mentorship program for 500+ students using Python and Tableau, improving retention by 25% through data-driven recommendations.</p>
         <div class="project-links">
           <a href="https://github.com/SamTech-crypto/mentorship-analysis" class="cta-button" target="_blank" rel="noopener">GitHub</a>
           <a href="https://nexlify-tau.vercel.app/mentorship-case-study" class="cta-button" target="_blank" rel="noopener">Case Study</a>
         </div>
-      </article>
-      <article class="project-card" data-aos="fade-up">
-        <img src="images/churn-small.webp" srcset="images/churn-small.webp 300w, images/churn-large.webp 600w" alt="Customer Churn Prediction" loading="lazy">
+      </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="images/churn.webp" alt="Customer Churn Prediction" loading="lazy">
         <h3>Customer Churn Prediction</h3>
         <p>Developed a machine learning model with 92% accuracy to predict customer churn, reducing churn by 15% for a telecom company.</p>
         <div class="project-links">
           <a href="https://github.com/SamTech-crypto/churn-prediction" class="cta-button" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://public.tableau.com/app/profile/your-username/viz/ChurnDashboard" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://your-tableau-link" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
         </div>
-      </article>
-      <article class="project-card" data-aos="fade-up">
-        <img src="images/etl-small.webp" srcset="images/etl-small.webp 300w, images/etl-large.webp 600w" alt="ETL Pipeline Development" loading="lazy">
+      </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="images/etl.webp" alt="ETL Pipeline Development" loading="lazy">
         <h3>ETL Pipeline Development</h3>
         <p>Built an automated ETL pipeline using SQL and Python, reducing data processing time by 40% for a retail company.</p>
         <div class="project-links">
           <a href="https://github.com/SamTech-crypto/etl-pipeline" class="cta-button" target="_blank" rel="noopener">GitHub</a>
         </div>
-      </article>
-      <article class="project-card" data-aos="fade-up">
-        <img src="images/sales-small.webp" srcset="images/sales-small.webp 300w, images/sales-large.webp 600w" alt="Sales Forecasting Dashboard" loading="lazy">
+      </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="images/sales.webp" alt="Sales Forecasting Dashboard" loading="lazy">
         <h3>Sales Forecasting Dashboard</h3>
-        <p>Created a Power BI dashboard for sales forecasting, improving forecast accuracy by 20% for a manufacturing firm.</p>
+        <p>Created a Tableau dashboard for sales forecasting, improving forecast accuracy by 20% for a manufacturing firm.</p>
         <div class="project-links">
           <a href="https://github.com/SamTech-crypto/sales-forecasting" class="cta-button" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiMTIzNDU2NzgtYWJjZC00NTY3LTg5MDEtMjM0NTY3ODkwMTIzIiwidCI6IjEyMzQ1Njc4LWFkZmctNDM4Ni1iYzEyLTM0NTY3ODkwMTIzNCJ9" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/Salesdashboard_17418496077860/Dashboard1" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
         </div>
-      </article>
-      <article class="project-card" data-aos="fade-up">
-        <img src="images/inventory-small.webp" srcset="images/inventory-small.webp 300w, images/inventory-large.webp 600w" alt="Inventory Management Dashboard" loading="lazy">
+      </div>
+      <div class="project-card" data-aos="fade-up">
+        <img src="images/inventory.webp" alt="Inventory Management Dashboard" loading="lazy">
         <h3>Inventory Management Dashboard</h3>
         <p>Developed a Power BI dashboard for SMEs to optimize inventory, reducing costs by 15% through real-time stock tracking.</p>
         <div class="project-links">
           <a href="https://github.com/SamTech-crypto/inventory-dashboard" class="cta-button" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiMTIzNDU2NzgtYWJjZC00NTY3LTg5MDEtMjM0NTY3ODkwMTIzIiwidCI6IjEyMzQ1Njc4LWFkZmctNDM4Ni1iYzEyLTM0NTY3ODkwMTIzNCJ9" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://your-powerbi-link-inventory" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
         </div>
-      </article>
+      </div>
     </div>
   </section>
 
   <section id="certifications" class="container" data-aos="fade-up">
     <h2>Certifications</h2>
     <div class="certifications-grid">
-      <article class="certification-card" data-aos="fade-up">
+      <div class="certification-card" data-aos="fade-up">
         <h3>Python Programming</h3>
         <p>Mastered Python for data analysis, automation, and scripting.</p>
-        <a href="files/cert-python.pdf" class="cta-button" download>View Certificate</a>
-      </article>
-      <article class="certification-card" data-aos="fade-up">
+        <a href="https://credential-link-python" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        <!-- TODO: Replace with actual link -->
+      </div>
+      <div class="certification-card" data-aos="fade-up">
         <h3>Machine Learning</h3>
         <p>Developed skills in supervised and unsupervised learning, neural networks.</p>
-        <a href="files/cert-ml.pdf" class="cta-button" download>View Certificate</a>
-      </article>
-      <article class="certification-card" data-aos="fade-up">
+        <a href="https://credential-link-ml" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        <!-- TODO: Replace with actual link -->
+      </div>
+      <div class="certification-card" data-aos="fade-up">
         <h3>Financial Modeling & Valuation Analyst (FMVA)</h3>
         <p>Expertise in financial modeling, valuation, and advanced Excel.</p>
         <a href="https://www.credential.net/306aa2da-cb88-4deb-9cee-25ec35ae3e78#acc.HBAFi6LN" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </article>
-      <article class="certification-card" data-aos="fade-up">
+      </div>
+      <div class="certification-card" data-aos="fade-up">
         <h3>Business Intelligence & Data Analyst (BIDA)</h3>
-        < Re-prioritize the remaining certifications to avoid redundancy and focus on key achievements -->
         <p>Proficient in BI tools, data visualization, and analytics.</p>
         <a href="https://www.credential.net/a3e8af83-8287-434e-93ad-7ccedeb0354a#acc.ki1m9oQd" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </article>
-      <article class="certification-card" data-aos="fade-up">
+      </div>
+      <div class="certification-card" data-aos="fade-up">
         <h3>SQL</h3>
         <p>Advanced querying, database management, and optimization.</p>
-        <a href="files/cert-sql.pdf" class="cta-button" download>View Certificate</a>
-      </article>
-      <article class="certification-card" data-aos="fade-up">
+        <a href="https://credential-link-sql" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        <!-- TODO: Replace with actual link -->
+      </div>
+      <div class="certification-card" data-aos="fade-up">
         <h3>Tableau</h3>
         <p>Created interactive dashboards and data visualizations.</p>
-        <a href="files/cert-tableau.pdf" class="cta-button" download>View Certificate</a>
-      </article>
-      <article class="certification-card" data-aos="fade-up">
+        <a href="https://credential-link-tableau" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        <!-- TODO: Replace with actual link -->
+      </div>
+      <div class="certification-card" data-aos="fade-up">
         <h3>Power BI</h3>
         <p>Built dynamic reports and dashboards for business insights.</p>
-        <a href="files/cert-powerbi.pdf" class="cta-button" download>View Certificate</a>
-      </article>
+        <a href="https://credential-link-powerbi" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        <!-- TODO: Replace with actual link -->
+      </div>
+      <div class="certification-card" data-aos="fade-up">
+        <h3>BI Tools</h3>
+        <p>Mastered multiple BI platforms for data-driven decisions.</p>
+        <a href="https://credential-link-bi-tools" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        <!-- TODO: Replace with actual link -->
+      </div>
+      <div class="certification-card" data-aos="fade-up">
+        <h3>Financial Planning & Analysis (FP&A)</h3>
+        <p>Expert in budgeting, forecasting, and strategic analysis.</p>
+        <a href="https://credential-link-fpa" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        <!-- TODO: Replace with actual link -->
+      </div>
+      <div class="certification-card" data-aos="fade-up">
+        <h3>Six Sigma</h3>
+        <p>Applied process improvement and quality control methodologies.</p>
+        <a href="https://credential-link-six-sigma" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        <!-- TODO: Replace with actual link -->
+      </div>
     </div>
   </section>
 
@@ -209,24 +222,21 @@
     <h2>Blog</h2>
     <p class="section-intro">Insights on data-driven solutions for SMEs</p>
     <div class="blog-grid">
-      <article class="blog-card" data-aos="fade-up">
-        <img src="images/predictive-analytics-small.webp" srcset="images/predictive-analytics-small.webp 300w, images/predictive-analytics-large.webp 600w" alt="Predictive Analytics" loading="lazy">
+      <div class="blog-card" data-aos="fade-up">
         <h3>Predictive Analytics for SMEs</h3>
         <p>How machine learning can reduce costs and boost competitiveness.</p>
         <a href="https://medium.com/@your-username/predictive-analytics-for-smes" class="cta-button" target="_blank" rel="noopener">Read More</a>
-      </article>
-      <article class="blog-card" data-aos="fade-up">
-        <img src="images/powerbi-inventory-small.webp" srcset="images/powerbi-inventory-small.webp 300w, images/powerbi-inventory-large.webp 600w" alt="Power BI Inventory" loading="lazy">
+      </div>
+      <div class="blog-card" data-aos="fade-up">
         <h3>Using Power BI for SME Inventory Management</h3>
         <p>Optimize stock levels with affordable BI tools.</p>
         <a href="https://medium.com/@your-username/power-bi-for-sme-inventory" class="cta-button" target="_blank" rel="noopener">Read More</a>
-      </article>
-      <article class="blog-card" data-aos="fade-up">
-        <img src="images/mentorship-case-small.webp" srcset="images/mentorship-case-small.webp 300w, images/mentorship-case-large.webp 600w" alt="Mentorship Case Study" loading="lazy">
+      </div>
+      <div class="blog-card" data-aos="fade-up">
         <h3>Mentorship Program Case Study</h3>
         <p>Improving student retention through data analysis.</p>
         <a href="https://medium.com/@your-username/mentorship-program-case-study" class="cta-button" target="_blank" rel="noopener">Read More</a>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -242,12 +252,13 @@
     <div class="contact-links">
       <a href="mailto:nexlifysolutions.team@gmail.com" title="Connect via Email">Email</a> |
       <a href="https://linkedin.com/in/your-username" title="Connect via LinkedIn">LinkedIn</a> |
-      <a href="https://github.com/SamTech-crypto" title="Connect via GitHub">GitHub</a>
+      <a href="https://github.com/your-username" title="Connect via GitHub">GitHub</a>
     </div>
   </section>
 
+  <!-- Back to Top Arrow -->
   <button id="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M12 19V5M5 12l7-7 7 7"/>
     </svg>
   </button>
@@ -269,14 +280,7 @@
     });
     if (localStorage.getItem('theme') === 'dark') body.classList.add('dark-mode');
 
-    // Hamburger Menu
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    // Form Submission with GA Tracking
+    // Form Submission
     const form = document.querySelector('.contact-form');
     form.addEventListener('submit', async e => {
       e.preventDefault();
@@ -289,7 +293,6 @@
         });
         if (response.ok) {
           form.reset();
-          gtag('event', 'form_submission', { 'form_id': 'contact' });
           alert('Message sent successfully!');
         } else {
           throw new Error('Form submission failed');
@@ -299,29 +302,27 @@
       }
     });
 
-    // CTA Button Tracking
-    document.querySelectorAll('.cta-button').forEach(button => {
-      button.addEventListener('click', () => {
-        gtag('event', 'cta_click', { 'button_text': button.textContent });
-      });
-    });
-
     // Back to Top Button
     const backToTopButton = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
-      backToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
     });
+
     backToTopButton.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR-ID-HERE"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-YOUR-ID-HERE');
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
 </body>
 </html>
