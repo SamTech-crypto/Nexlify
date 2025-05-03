@@ -9,7 +9,7 @@
   <meta property="og:title" content="Samuel Mwendwa - Data Scientist">
   <meta property="og:description" content="Explore my portfolio of data-driven solutions for SMEs, featuring Python, Tableau, and Power BI projects.">
   <meta property="og:image" content="images/og-image.jpg">
-  <meta property="og:url" content="https://your-site.vercel.app">
+  <meta property="og:url" content="https://nexlify-tau.vercel.app/">
   <meta property="og:type" content="website">
   <title>Samuel Mwendwa - Data Scientist</title>
   <link rel="stylesheet" href="styles.css">
@@ -22,12 +22,15 @@
     "@type": "Person",
     "name": "Samuel Mwendwa",
     "jobTitle": "Data Scientist",
-    "url": "https://your-site.vercel.app",
+    "url": "https://nexlify-tau.vercel.app/",
     "sameAs": ["https://linkedin.com/in/your-username", "https://github.com/your-username"]
   }
   </script>
 </head>
 <body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
   <header>
     <nav class="navbar">
       <div class="logo">Samuel Mwendwa</div>
@@ -113,7 +116,7 @@
         <p>Analyzed the impact of a mentorship program for 500+ students using Python and Tableau, improving retention by 25% through data-driven recommendations.</p>
         <div class="project-links">
           <a href="https://github.com/SamTech-crypto/mentorship-analysis" class="cta-button" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://your-site.com/mentorship-case-study" class="cta-button" target="_blank" rel="noopener">Case Study</a>
+          <a href="https://nexlify-tau.vercel.app/mentorship-case-study" class="cta-button" target="_blank" rel="noopener">Case Study</a>
         </div>
       </div>
       <div class="project-card" data-aos="fade-up">
@@ -256,12 +259,42 @@
     </div>
   </section>
 
+  <!-- Back to Top Arrow -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
   <footer>
-    <p>&copy; 2025 Samuel Mwendwa. All rights reserved.</p>
+    <p>© 2025 Samuel Mwendwa. All rights reserved.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
+    // Initialize particles.js
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: ['#00c4b4', '#1a2a44'] },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: '#00c4b4', opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+
+    // AOS Initialization
     AOS.init();
+
+    // Theme Toggle
     const toggleButton = document.getElementById('theme-toggle');
     const body = document.body;
     toggleButton.addEventListener('click', () => {
@@ -270,6 +303,7 @@
     });
     if (localStorage.getItem('theme') === 'dark') body.classList.add('dark-mode');
 
+    // Form Submission
     const form = document.querySelector('.contact-form');
     form.addEventListener('submit', async e => {
       e.preventDefault();
@@ -289,6 +323,20 @@
       } catch (error) {
         alert('Error sending message. Please try again.');
       }
+    });
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
   <!-- Google Analytics -->
