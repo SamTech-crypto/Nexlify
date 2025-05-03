@@ -22,6 +22,7 @@ body {
   background: linear-gradient(135deg, var(--primary-navy) 0%, var(--accent-teal) 100%);
   transition: background 0.3s, color 0.3s;
   position: relative;
+  padding-top: 80px; /* Add padding to prevent content from being hidden under the fixed header */
 }
 
 body.dark-mode {
@@ -41,8 +42,9 @@ body.dark-mode {
   align-items: center;
   padding: 20px 40px;
   background: var(--primary-navy);
-  position: sticky;
+  position: fixed; /* Changed from sticky to fixed */
   top: 0;
+  width: 100%; /* Ensure it spans the full width */
   z-index: 1000;
   box-shadow: var(--shadow);
 }
@@ -51,7 +53,7 @@ body.dark-mode {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--text-white);
-  letter-spacing: 1px; /* Added for better readability */
+  letter-spacing: 1px;
 }
 
 .nav-links a {
@@ -185,10 +187,10 @@ body.dark-mode .section-intro {
 }
 
 #about {
-  background: rgba(255, 255, 255, 0.1); /* Slight white overlay for contrast */
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 40px 20px;
-  opacity: 1 !important; /* Fallback for AOS */
+  opacity: 1 !important;
 }
 
 #about h2,
