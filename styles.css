@@ -51,6 +51,7 @@ body.dark-mode {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--text-white);
+  letter-spacing: 1px; /* Added for better readability */
 }
 
 .nav-links a {
