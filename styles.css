@@ -19,12 +19,13 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: var(--text-light);
-  background: var(--background-light);
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--accent-teal) 100%);
   transition: background 0.3s, color 0.3s;
+  position: relative;
 }
 
 body.dark-mode {
-  background: var(--background-dark);
+  background: linear-gradient(135deg, #0d1a2d 0%, #1e3c72 100%);
   color: var(--text-dark);
 }
 
@@ -100,8 +101,9 @@ body:not(.dark-mode) .moon-icon {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--accent-teal) 100%);
   color: var(--text-white);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h1 {
@@ -136,6 +138,8 @@ body:not(.dark-mode) .moon-icon {
 
 section {
   padding: 60px 0;
+  position: relative;
+  z-index: 1;
 }
 
 h2 {
@@ -283,6 +287,8 @@ footer {
   padding: 20px;
   background: var(--primary-navy);
   color: var(--text-white);
+  position: relative;
+  z-index: 1;
 }
 
 .cta-banner {
@@ -293,6 +299,8 @@ footer {
   margin: 20px auto;
   border-radius: 8px;
   max-width: 600px;
+  position: relative;
+  z-index: 1;
 }
 
 .cta-banner h3 {
@@ -302,6 +310,42 @@ footer {
 .resume-download {
   text-align: center;
   margin: 20px 0;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--accent-teal);
+  color: var(--text-white);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#back-to-top:hover {
+  background: var(--primary-navy);
+  transform: scale(1.1);
+}
+
+#back-to-top svg {
+  width: 24px;
+  height: 24px;
+}
+
+body.dark-mode #back-to-top {
+  background: var(--accent-teal);
+}
+
+body.dark-mode #back-to-top:hover {
+  background: #0d1a2d;
 }
 
 @media (max-width: 768px) {
@@ -321,5 +365,15 @@ footer {
   .about-content {
     flex-direction: column;
     text-align: center;
+  }
+  #back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  #back-to-top svg {
+    width: 20px;
+    height: 20px;
   }
 }
