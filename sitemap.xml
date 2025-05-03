@@ -13,25 +13,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nexlify-tau.vercel.app/#skills</loc>
-    <lastmod>2025-05-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nexlify-tau.vercel.app/#projects</loc>
-    <lastmod>2025-05-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nexlify-tau.vercel.app/#certifications</loc>
-    <lastmod>2025-05-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nexlify-tau.vercel.app/#blog</loc>
     <lastmod>2025-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -41,11 +23,5 @@
     <lastmod>2025-05-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nexlify-tau.vercel.app/mentorship-case-study</loc>
-    <lastmod>2025-05-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
