@@ -36,6 +36,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#demo-lab">Demo Lab</a>
         <a href="#certifications">Certifications</a>
         <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
@@ -156,6 +157,64 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="demo-lab" class="container" data-aos="fade-up">
+    <h2>Demo Lab</h2>
+    <p class="section-intro">Explore my Streamlit apps designed to solve real-world business challenges.</p>
+    <div class="filter-container">
+      <label for="use-case-filter">Filter by Use Case: </label>
+      <select id="use-case-filter" onchange="filterApps()">
+        <option value="all">All</option>
+        <option value="Audit Automation">Audit Automation</option>
+        <option value="Customer Retention">Customer Retention</option>
+        <option value="SME Finance">SME Finance</option>
+        <option value="Risk Prediction">Risk Prediction</option>
+        <option value="Fraud Detection">Fraud Detection</option>
+      </select>
+    </div>
+    <table class="demo-lab-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>URL</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-use-case="Audit Automation">
+          <td data-label="Name">Audit Workflow Optimizer</td>
+          <td data-label="Description">Automated audit risk classification and checklist streamlining using AI.</td>
+          <td data-label="URL"><a href="https://audit-workflow-app.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
+          <td data-label="Use Case">Audit Automation</td>
+        </tr>
+        <tr data-use-case="Customer Retention">
+          <td data-label="Name">Customer Churn Predictor</td>
+          <td data-label="Description">Predicts churn probability using ML models trained on behavioral and transactional data.</td>
+          <td data-label="URL"><a href="https://customerchurnpredictor-churnpredictor.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
+          <td data-label="Use Case">Customer Retention</td>
+        </tr>
+        <tr data-use-case="SME Finance">
+          <td data-label="Name">Invoice Intelligence (InvoFi)</td>
+          <td data-label="Description">Streamlines invoice validation and payment prediction using LLMs.</td>
+          <td data-label="URL"><a href="https://invofi.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
+          <td data-label="Use Case">SME Finance</td>
+        </tr>
+        <tr data-use-case="Risk Prediction">
+          <td data-label="Name">Predictive Risk Scoring</td>
+          <td data-label="Description">Uses AI to score clients, vendors, or projects on risk exposure.</td>
+          <td data-label="URL"><a href="https://predictive-risk-app.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
+          <td data-label="Use Case">Risk Prediction</td>
+        </tr>
+        <tr data-use-case="Fraud Detection">
+          <td data-label="Name">Transaction Forecast & Anomaly Detection</td>
+          <td data-label="Description">Forecasts transactional trends and flags suspicious activity in financial operations.</td>
+          <td data-label="URL"><a href="https://transaction-forecasting-anomalies-r6jt5hdv3kvhhuze8qlgeh.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
+          <td data-label="Use Case">Fraud Detection</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <section id="certifications" class="container" data-aos="fade-up">
@@ -319,6 +378,21 @@
     backToTopButton.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // Demo Lab Filter
+    function filterApps() {
+      const filterValue = document.getElementById('use-case-filter').value;
+      const rows = document.querySelectorAll('.demo-lab-table tbody tr');
+
+      rows.forEach(row => {
+        const useCase = row.getAttribute('data-use-case');
+        if (filterValue === 'all' || useCase === filterValue) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
   </script>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
