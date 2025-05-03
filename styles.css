@@ -22,7 +22,7 @@ body {
   background: linear-gradient(135deg, var(--primary-navy) 0%, var(--accent-teal) 100%);
   transition: background 0.3s, color 0.3s;
   position: relative;
-  padding-top: 80px; /* Add padding to prevent content from being hidden under the fixed header */
+  padding-top: 80px;
 }
 
 body.dark-mode {
@@ -42,9 +42,9 @@ body.dark-mode {
   align-items: center;
   padding: 20px 40px;
   background: var(--primary-navy);
-  position: fixed; /* Changed from sticky to fixed */
+  position: fixed;
   top: 0;
-  width: 100%; /* Ensure it spans the full width */
+  width: 100%;
   z-index: 1000;
   box-shadow: var(--shadow);
 }
@@ -368,6 +368,87 @@ body.dark-mode #back-to-top:hover {
   background: #0d1a2d;
 }
 
+/* Demo Lab Section */
+.demo-lab-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: var(--background-light);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+body.dark-mode .demo-lab-table {
+  background: #1e1e1e;
+}
+
+.demo-lab-table th,
+.demo-lab-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+body.dark-mode .demo-lab-table th,
+body.dark-mode .demo-lab-table td {
+  border-bottom: 1px solid #444;
+}
+
+.demo-lab-table th {
+  background: var(--primary-navy);
+  color: var(--text-white);
+  font-weight: bold;
+}
+
+body.dark-mode .demo-lab-table th {
+  background: #0d1a2d;
+}
+
+.demo-lab-table td a {
+  color: var(--accent-teal);
+  text-decoration: none;
+}
+
+.demo-lab-table td a:hover {
+  text-decoration: underline;
+}
+
+body.dark-mode .demo-lab-table td a {
+  color: var(--accent-teal);
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter-container label {
+  font-size: 1.1rem;
+  margin-right: 10px;
+  color: var(--text-white);
+}
+
+body.dark-mode .filter-container label {
+  color: var(--text-dark);
+}
+
+.filter-container select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: var(--background-light);
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+body.dark-mode .filter-container select {
+  background: #1e1e1e;
+  color: var(--text-dark);
+  border-color: #444;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -395,5 +476,40 @@ body.dark-mode #back-to-top:hover {
   #back-to-top svg {
     width: 20px;
     height: 20px;
+  }
+  .demo-lab-table th,
+  .demo-lab-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .demo-lab-table thead {
+    display: none;
+  }
+  .demo-lab-table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+  }
+  body.dark-mode .demo-lab-table tbody tr {
+    border-bottom: 2px solid #444;
+  }
+  .demo-lab-table tbody td {
+    display: block;
+    text-align: center;
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  .demo-lab-table tbody td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    font-weight: bold;
+    text-align: left;
+    color: var(--primary-navy);
+  }
+  body.dark-mode .demo-lab-table tbody td:before {
+    color: var(--accent-teal);
   }
 }
