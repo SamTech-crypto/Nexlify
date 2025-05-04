@@ -42,6 +42,7 @@
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#services">Services</a> <!-- New Services link -->
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#demo-lab">Demo Lab</a>
@@ -66,9 +67,12 @@
   <section id="home" class="hero">
     <div class="hero-content" data-aos="fade-up">
       <h1>Hi, I’m Samuel Mwendwa</h1>
-      <p class="tagline">Empowering SMEs with Data-Driven and AI-Driven Solutions</p>
-      <p>A Strategic Data Technologist leveraging AI, machine learning, and advanced analytics to turn raw data into actionable insights. I help small and medium enterprises unlock growth through predictive models, automated dashboards, and intelligent decision systems using Python, Tableau, and Power BI.</p>
-      <a href="#contact" class="cta-button">Get in Touch</a>
+      <p class="tagline">Empowering SMEs with Data-Driven and AI-Powered Solutions</p>
+      <p>I’m a Strategic Data Technologist focused on helping small and medium enterprises harness the power of AI, machine learning, and analytics. From predictive models to intelligent dashboards, I translate raw data into growth-driving insights—using tools like Python, Tableau, and Power BI.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="cta-button">Explore Solutions</a>
+        <a href="#projects" class="cta-button secondary">View My Work</a> <!-- New secondary CTA -->
+      </div>
     </div>
   </section>
 
@@ -77,18 +81,43 @@
     <div class="about-content">
       <img src="images/headshot.webp" alt="Samuel Mwendwa, Strategic AI Technologist" class="headshot" loading="lazy">
       <div class="about-text">
-        <p>I’m a Strategic AI Technologist passionate about solving complex problems for startups and global tech firms. I leverage machine learning, LLMs, and cloud-based analytics to deliver innovative, data-driven solutions.</p>
-        <p>With deep expertise in Python, PyTorch, Tableau, and BigQuery, I build scalable systems that drive actionable insights and business impact. I also enjoy sharing knowledge through writing—check out my blog below!</p>
-        <div class="resume-download">
+        <h3>Samuel Mwendwa – Strategic AI Technologist</h3>
+        <p>I specialize in designing intelligent, data-driven systems that solve complex problems for startups and global tech firms alike. My work blends machine learning, LLMs, and cloud-based analytics to fuel innovation and business value.</p>
+        <p>With deep expertise in Python, PyTorch, Tableau, and BigQuery, I build scalable solutions that unlock real-time insights and strategic impact. I’m also passionate about sharing what I learn—don’t miss the latest articles on my blog below.</p>
+        <div class="about-ctas">
           <a href="files/resume.pdf" class="cta-button" download>Download Resume</a>
+          <a href="#contact" class="cta-button secondary">Book a Call</a> <!-- New CTA -->
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Services Section -->
+  <section id="services" class="container" data-aos="fade-up">
+    <h2>Services</h2>
+    <p class="section-intro">Tailored solutions to drive growth and efficiency for SMEs</p>
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up">
+        <h3>AI Consulting</h3>
+        <p>Leverage machine learning and predictive analytics to solve business challenges, from customer retention to operational efficiency. I design custom AI strategies tailored to your SME’s needs.</p>
+        <a href="#contact" class="cta-button">Explore Solutions</a>
+      </div>
+      <div class="service-card" data-aos="fade-up">
+        <h3>App Development</h3>
+        <p>Build intelligent, user-friendly apps using Streamlit, Python, and cloud platforms. From churn predictors to fraud detection tools, I create solutions that deliver real-time insights.</p>
+        <a href="#demo-lab" class="cta-button">View Demos</a>
+      </div>
+      <div class="service-card" data-aos="fade-up">
+        <h3>Data Training</h3>
+        <p>Empower your team with hands-on training in data analytics, visualization, and AI tools like Tableau, Power BI, and Python. Unlock the full potential of your data.</p>
+        <a href="#contact" class="cta-button">Book a Session</a>
       </div>
     </div>
   </section>
 
   <div class="cta-banner" data-aos="fade-up">
     <h3>Need Data-Driven Solutions for Your SME?</h3>
-    <a href="#contact" class="cta-button">Get in Touch</a>
+    <a href="#contact" class="cta-button">Get Started</a> <!-- Varied CTA -->
   </div>
 
   <section id="skills" class="container" data-aos="fade-up">
@@ -122,46 +151,61 @@
     <div class="projects-grid">
       <div class="project-card" data-aos="fade-up">
         <img src="images/mentorship.webp" alt="Mentorship Program Analysis" loading="lazy">
+        <div class="project-overlay">
+          <p>Tech: Python, Tableau | Impact: 25% retention boost</p>
+        </div>
         <h3>Mentorship Program Analysis</h3>
         <p>Analyzed the impact of a mentorship program for 500+ students using Python and Tableau, improving retention by 25% through data-driven recommendations.</p>
         <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/mentorship-analysis" class="cta-button" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://nexlify-tau.vercel.app/mentorship-case-study" class="cta-button" target="_blank" rel="noopener">Case Study</a>
+          <a href="https://github.com/SamTech-crypto/mentorship-analysis" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+          <a href="https://nexlify-tau.vercel.app/mentorship-case-study" class="cta-button secondary" target="_blank" rel="noopener">Case Study</a>
         </div>
       </div>
       <div class="project-card" data-aos="fade-up">
         <img src="images/churn.webp" alt="Customer Churn Prediction" loading="lazy">
+        <div class="project-overlay">
+          <p>Tech: scikit-learn, XGBoost, Streamlit | Accuracy: 92%</p>
+        </div>
         <h3>Customer Churn Prediction</h3>
         <p>Built a machine learning model (92% accuracy) using scikit-learn and XGBoost on customer behavior data. Deployed insights through Streamlit app and cloud dashboard for real-time churn alerts.</p>
         <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/churn-prediction" class="cta-button" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://your-tableau-link" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://github.com/SamTech-crypto/churn-prediction" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+          <a href="https://your-tableau-link" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
         </div>
       </div>
       <div class="project-card" data-aos="fade-up">
         <img src="images/etl.webp" alt="ETL Pipeline with Airflow" loading="lazy">
+        <div class="project-overlay">
+          <p>Tech: Python, SQL, Airflow, GCP</p>
+        </div>
         <h3>ETL Pipeline with Airflow</h3>
         <p>Developed a robust ETL pipeline using Python, SQL, and Apache Airflow, automating data ingestion and processing for a retail analytics system hosted on GCP.</p>
         <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/etl-pipeline" class="cta-button" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/SamTech-crypto/etl-pipeline" class="cta-button" target="_blank" rel="noopener">View My Work</a>
         </div>
       </div>
       <div class="project-card" data-aos="fade-up">
         <img src="images/sales.webp" alt="Sales Forecasting Dashboard" loading="lazy">
+        <div class="project-overlay">
+          <p>Tech: Tableau | Impact: 20% accuracy boost</p>
+        </div>
         <h3>Sales Forecasting Dashboard</h3>
         <p>Created a Tableau dashboard for sales forecasting, improving forecast accuracy by 20% for a manufacturing firm.</p>
         <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/sales-forecasting" class="cta-button" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/Salesdashboard_17418496077860/Dashboard1" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://github.com/SamTech-crypto/sales-forecasting" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+          <a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/Salesdashboard_17418496077860/Dashboard1" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
         </div>
       </div>
       <div class="project-card" data-aos="fade-up">
         <img src="images/inventory.webp" alt="Inventory Management Dashboard" loading="lazy">
+        <div class="project-overlay">
+          <p>Tech: Power BI | Impact: 15% cost reduction</p>
+        </div>
         <h3>Inventory Management Dashboard</h3>
         <p>Developed a Power BI dashboard for SMEs to optimize inventory, reducing costs by 15% through real-time stock tracking.</p>
         <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/inventory-dashboard" class="cta-button" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://your-powerbi-link-inventory" class="cta-button" target="_blank" rel="noopener">Live Demo</a>
+          <a href="https://github.com/SamTech-crypto/inventory-dashboard" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+          <a href="https://your-powerbi-link-inventory" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
         </div>
       </div>
     </div>
@@ -231,14 +275,14 @@
       <div class="certification-card" data-aos="fade-up">
         <h3>Python Programming</h3>
         <p>Mastered Python for data analysis, automation, and scripting.</p>
-        <a href="https://credential-link-python" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         <!-- TODO: Replace with actual link -->
+        <!-- <a href="https://credential-link-python" class="cta-button" target="_blank" rel="noopener">View Certificate</a> -->
       </div>
       <div class="certification-card" data-aos="fade-up">
         <h3>Machine Learning</h3>
         <p>Developed skills in supervised and unsupervised learning, neural networks.</p>
-        <a href="https://credential-link-ml" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         <!-- TODO: Replace with actual link -->
+        <!-- <a href="https://credential-link-ml" class="cta-button" target="_blank" rel="noopener">View Certificate</a> -->
       </div>
       <div class="certification-card" data-aos="fade-up">
         <h3>Financial Modeling & Valuation Analyst (FMVA)</h3>
@@ -253,38 +297,38 @@
       <div class="certification-card" data-aos="fade-up">
         <h3>SQL</h3>
         <p>Advanced querying, database management, and optimization.</p>
-        <a href="https://credential-link-sql" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         <!-- TODO: Replace with actual link -->
+        <!-- <a href="https://credential-link-sql" class="cta-button" target="_blank" rel="noopener">View Certificate</a> -->
       </div>
       <div class="certification-card" data-aos="fade-up">
         <h3>Tableau</h3>
         <p>Created interactive dashboards and data visualizations.</p>
-        <a href="https://credential-link-tableau" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         <!-- TODO: Replace with actual link -->
+        <!-- <a href="https://credential-link-tableau" class="cta-button" target="_blank" rel="noopener">View Certificate</a> -->
       </div>
       <div class="certification-card" data-aos="fade-up">
         <h3>Power BI</h3>
         <p>Built dynamic reports and dashboards for business insights.</p>
-        <a href="https://credential-link-powerbi" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         <!-- TODO: Replace with actual link -->
+        <!-- <a href="https://credential-link-powerbi" class="cta-button" target="_blank" rel="noopener">View Certificate</a> -->
       </div>
       <div class="certification-card" data-aos="fade-up">
         <h3>BI Tools</h3>
         <p>Mastered multiple BI platforms for data-driven decisions.</p>
-        <a href="https://credential-link-bi-tools" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         <!-- TODO: Replace with actual link -->
+        <!-- <a href="https://credential-link-bi-tools" class="cta-button" target="_blank" rel="noopener">View Certificate</a> -->
       </div>
       <div class="certification-card" data-aos="fade-up">
         <h3>Financial Planning & Analysis (FP&A)</h3>
         <p>Expert in budgeting, forecasting, and strategic analysis.</p>
-        <a href="https://credential-link-fpa" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         <!-- TODO: Replace with actual link -->
+        <!-- <a href="https://credential-link-fpa" class="cta-button" target="_blank" rel="noopener">View Certificate</a> -->
       </div>
       <div class="certification-card" data-aos="fade-up">
         <h3>Six Sigma</h3>
         <p>Applied process improvement and quality control methodologies.</p>
-        <a href="https://credential-link-six-sigma" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         <!-- TODO: Replace with actual link -->
+        <!-- <a href="https://credential-link-six-sigma" class="cta-button" target="_blank" rel="noopener">View Certificate</a> -->
       </div>
     </div>
   </section>
@@ -296,17 +340,23 @@
       <div class="blog-card" data-aos="fade-up">
         <h3>Predictive Analytics for SMEs</h3>
         <p>How machine learning can reduce costs and boost competitiveness.</p>
-        <a href="https://medium.com/@your-username/predictive-analytics-for-smes" class="cta-button" target="_blank" rel="noopener">Read More</a>
+        <!-- TODO: Replace with actual Medium link -->
+        <!-- <a href="https://medium.com/@your-username/predictive-analytics-for-smes" class="cta-button" target="_blank" rel="noopener">Read More</a> -->
+        <a href="#contact" class="cta-button">Get Updates</a> <!-- Temporary CTA until blog links are updated -->
       </div>
       <div class="blog-card" data-aos="fade-up">
         <h3>Using Power BI for SME Inventory Management</h3>
         <p>Optimize stock levels with affordable BI tools.</p>
-        <a href="https://medium.com/@your-username/power-bi-for-sme-inventory" class="cta-button" target="_blank" rel="noopener">Read More</a>
+        <!-- TODO: Replace with actual Medium link -->
+        <!-- <a href="https://medium.com/@your-username/power-bi-for-sme-inventory" class="cta-button" target="_blank" rel="noopener">Read More</a> -->
+        <a href="#contact" class="cta-button">Get Updates</a>
       </div>
       <div class="blog-card" data-aos="fade-up">
         <h3>Mentorship Program Case Study</h3>
         <p>Improving student retention through data analysis.</p>
-        <a href="https://medium.com/@your-username/mentorship-program-case-study" class="cta-button" target="_blank" rel="noopener">Read More</a>
+        <!-- TODO: Replace with actual Medium link -->
+        <!-- <a href="https://medium.com/@your-username/mentorship-program-case-study" class="cta-button" target="_blank" rel="noopener">Read More</a> -->
+        <a href="#contact" class="cta-button">Get Updates</a>
       </div>
     </div>
   </section>
