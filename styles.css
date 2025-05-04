@@ -7,6 +7,7 @@
   --text-dark: #e0e0e0;
   --text-white: #fff;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.2); /* Bolder shadow for dark mode */
 }
 
 * {
@@ -125,6 +126,12 @@ body:not(.dark-mode) .moon-icon {
   margin-bottom: 20px;
 }
 
+.hero-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
@@ -132,11 +139,23 @@ body:not(.dark-mode) .moon-icon {
   color: var(--text-white);
   text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .cta-button:hover {
   background: var(--primary-navy);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  border: 1px solid var(--accent-teal);
+}
+
+.cta-button.secondary:hover {
+  background: var(--accent-teal);
+  border-color: var(--primary-navy);
 }
 
 section {
@@ -186,6 +205,12 @@ body.dark-mode .section-intro {
   margin-bottom: 20px;
 }
 
+.about-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
 #about {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
@@ -203,33 +228,45 @@ body.dark-mode #about .about-text p {
   color: var(--text-white);
 }
 
-.skills-grid, .projects-grid, .certifications-grid, .blog-grid {
+.skills-grid, .projects-grid, .certifications-grid, .blog-grid, .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px; /* Increased for better mobile readability */
 }
 
-.skill-card, .project-card, .certification-card, .blog-card {
+.skill-card, .project-card, .certification-card, .blog-card, .service-card {
   background: var(--background-light);
   padding: 20px;
   border-radius: 8px;
   box-shadow: var(--shadow);
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* For project overlay */
 }
 
 body.dark-mode .skill-card,
 body.dark-mode .project-card,
 body.dark-mode .certification-card,
-body.dark-mode .blog-card {
+body.dark-mode .blog-card,
+body.dark-mode .service-card {
   background: #1e1e1e;
+  box-shadow: var(--shadow-dark);
 }
 
-.skill-card:hover, .project-card:hover, .certification-card:hover, .blog-card:hover {
+.skill-card:hover, .project-card:hover, .certification-card:hover, .blog-card:hover, .service-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.skill-card h3, .project-card h3, .certification-card h3, .blog-card h3 {
+body.dark-mode .skill-card:hover,
+body.dark-mode .project-card:hover,
+body.dark-mode .certification-card:hover,
+body.dark-mode .blog-card:hover,
+body.dark-mode .service-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card h3, .project-card h3, .certification-card h3, .blog-card h3, .service-card h3 {
   margin-bottom: 10px;
   color: var(--primary-navy);
 }
@@ -237,7 +274,8 @@ body.dark-mode .blog-card {
 body.dark-mode .skill-card h3,
 body.dark-mode .project-card h3,
 body.dark-mode .certification-card h3,
-body.dark-mode .blog-card h3 {
+body.dark-mode .blog-card h3,
+body.dark-mode .service-card h3 {
   color: var(--accent-teal);
 }
 
@@ -247,6 +285,32 @@ body.dark-mode .blog-card h3 {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* Match image height */
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay p {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px;
 }
 
 .project-links {
@@ -463,9 +527,17 @@ body.dark-mode .filter-container select {
   .hero-content h1 {
     font-size: 2rem;
   }
+  .hero-ctas {
+    flex-direction: column;
+    gap: 10px;
+  }
   .about-content {
     flex-direction: column;
     text-align: center;
+  }
+  .about-ctas {
+    flex-direction: column;
+    gap: 10px;
   }
   #back-to-top {
     bottom: 20px;
