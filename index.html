@@ -3,683 +3,376 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Samuel Mwendwa – AI-focused Data Strategist leveraging machine learning, LLMs, and cloud-based analytics to solve complex problems for startups and global tech firms using Python, PyTorch, Tableau, and BigQuery.">
-  <meta name="keywords" content="AI Data Scientist, LLMs, machine learning, data science, predictive analytics, Python, PyTorch, LangChain, Hugging Face, BigQuery, Tableau, Power BI, cloud data engineering, MLOps, OpenAI tools">
-  <meta name="author" content="Samuel Mwendwa">
-  <meta property="og:title" content="Samuel Mwendwa - Strategic AI Technologist">
-  <meta property="og:description" content="Explore my portfolio of data-driven solutions for SMEs, featuring Python, Tableau, and Power BI projects.">
-  <meta property="og:image" content="images/og-image.jpg">
-  <meta property="og:url" content="https://nexlify-tau.vercel.app/">
-  <meta property="og:type" content="website">
-  <title>Samuel Mwendwa - Strategic AI Technologist</title>
+  <title>Samuel Mwendwa - Data Analyst Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="images/favicon.png" type="image/png">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Samuel Mwendwa",
-    "jobTitle": "Strategic AI Technologist",
-    "url": "https://nexlify-tau.vercel.app/",
-    "sameAs": ["https://www.linkedin.com/in/samuel-mwendwa/", "https://github.com/SamTech-crypto"]
-  }
-  </script>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3KQ023FEP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Q3KQ023FEP');
-  </script>
-  <!-- Tableau JavaScript API -->
   <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-  <!-- RSS2JSON for Medium Feed -->
-  <script src="https://api.rss2json.com/v1/api.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Samuel Mwendwa</div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#demo-lab">Demo Lab</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#resume">Resume</a>
-        <a href="#blog">Blog</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="theme-toggle">
-        <button id="theme-toggle" aria-label="Toggle dark mode">
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <circle cx="12" cy="12" r="5"/>
-            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-          </svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-      </div>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="logo">Samuel Mwendwa</div>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#demo-lab">Demo Lab</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="theme-toggle">
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <img src="images/sun-icon.svg" class="sun-icon" alt="Sun icon">
+        <img src="images/moon-icon.svg" class="moon-icon" alt="Moon icon">
+      </button>
+    </div>
+  </nav>
 
-  <section id="home" class="hero">
+  <section id="hero" class="hero">
     <div class="hero-content" data-aos="fade-up">
-      <h1>Hi, I’m Samuel Mwendwa</h1>
-      <p class="tagline">Empowering SMEs with Data-Driven and AI-Powered Solutions</p>
-      <p>I’m a Strategic Data Technologist focused on helping small and medium enterprises harness the power of AI, machine learning, and analytics. From predictive models to intelligent dashboards, I translate raw data into growth-driving insights—using tools like Python, Tableau, and Power BI.</p>
+      <h1>Data Analyst & Visualization Expert</h1>
+      <p class="tagline">Transforming Data into Actionable Insights</p>
+      <p>Specializing in Python, Tableau, Power BI, and Machine Learning to drive business decisions.</p>
       <div class="hero-ctas">
-        <a href="#contact" class="cta-button">Explore Solutions</a>
-        <a href="#projects" class="cta-button secondary">View My Work</a>
+        <a href="#projects" class="cta-button">View Projects</a>
+        <a href="#contact" class="cta-button secondary">Get in Touch</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="container" data-aos="fade-up">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <img src="images/headshot.webp" alt="Samuel Mwendwa, Strategic AI Technologist" class="headshot" loading="lazy">
-      <div class="about-text">
-        <h3>Samuel Mwendwa – Strategic AI Technologist</h3>
-        <p>I specialize in designing intelligent, data-driven systems that solve complex problems for startups and global tech firms alike. My work blends machine learning, LLMs, and cloud-based analytics to fuel innovation and business value.</p>
-        <p>With deep expertise in Python, PyTorch, Tableau, and BigQuery, I build scalable solutions that unlock real-time insights and strategic impact. I’m also passionate about sharing what I learn—don’t miss the latest articles on my blog below.</p>
-        <div class="about-ctas">
-          <a href="files/resume.pdf" class="cta-button" download>Download Resume</a>
-          <a href="#contact" class="cta-button secondary">Book a Call</a>
+  <section id="about">
+    <div class="container">
+      <h2 data-aos="fade-up">About Me</h2>
+      <p class="section-intro" data-aos="fade-up">Data enthusiast with a passion for uncovering insights and solving complex problems.</p>
+      <div class="about-content" data-aos="fade-up">
+        <img src="images/headshot.jpg" alt="Samuel Mwendwa headshot" class="headshot" loading="lazy">
+        <div class="about-text">
+          <p>I’m a Data Analyst with expertise in Python, Tableau, Power BI, and Machine Learning, dedicated to turning raw data into strategic solutions. With a background in financial analysis and process optimization, I deliver impactful visualizations and predictive models.</p>
+          <p>My approach combines technical proficiency with a keen understanding of business needs, ensuring data-driven outcomes.</p>
+          <div class="about-ctas">
+            <a href="#resume" class="cta-button">View Resume</a>
+            <a href="#contact" class="cta-button secondary">Contact Me</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="services" class="container" data-aos="fade-up">
-    <h2>Services</h2>
-    <p class="section-intro">Tailored solutions to drive growth and efficiency for SMEs</p>
-    <div class="services-grid">
-      <div class="service-card" data-aos="fade-up">
-        <h3>AI Consulting</h3>
-        <p>Leverage machine learning and predictive analytics to solve business challenges, from customer retention to operational efficiency. I design custom AI strategies tailored to your SME’s needs.</p>
-        <a href="#contact" class="cta-button">Explore Solutions</a>
-      </div>
-      <div class="service-card" data-aos="fade-up">
-        <h3>App Development</h3>
-        <p>Build intelligent, user-friendly apps using Streamlit, Python, and cloud platforms. From churn predictors to fraud detection tools, I create solutions that deliver real-time insights.</p>
-        <a href="#demo-lab" class="cta-button">View Demos</a>
-      </div>
-      <div class="service-card" data-aos="fade-up">
-        <h3>Data Training</h3>
-        <p>Empower your team with hands-on training in data analytics, visualization, and AI tools like Tableau, Power BI, and Python. Unlock the full potential of your data.</p>
-        <a href="#contact" class="cta-button">Book a Session</a>
+  <section id="skills">
+    <div class="container">
+      <h2 data-aos="fade-up">Skills</h2>
+      <p class="section-intro" data-aos="fade-up">Technical expertise and tools I use to deliver insights.</p>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up">
+          <h3>Python</h3>
+          <p>Data analysis, scripting, and machine learning with pandas, NumPy, and scikit-learn.</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <h3>Tableau</h3>
+          <p>Interactive dashboards and data visualization for actionable insights.</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <h3>Power BI</h3>
+          <p>Business intelligence dashboards and reporting for strategic decisions.</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <h3>SQL</h3>
+          <p>Database querying and data manipulation for efficient data retrieval.</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <h3>Machine Learning</h3>
+          <p>Predictive modeling and clustering using Python and TensorFlow.</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up">
+          <h3>Excel</h3>
+          <p>Advanced data analysis, VBA scripting, and financial modeling.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="cta-banner" data-aos="fade-up">
-    <h3>Need Data-Driven Solutions for Your SME?</h3>
-    <a href="#contact" class="cta-button">Get Started</a>
-  </div>
-
-  <section id="skills" class="container" data-aos="fade-up">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>AI & Machine Learning</h3>
-        <p>Skilled in developing ML models using scikit-learn, TensorFlow, PyTorch, and XGBoost. Exploring generative AI with OpenAI, Hugging Face Transformers, and LangChain.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Data Engineering</h3>
-        <p>Experience with SQL, Apache Airflow, ETL pipelines, and data modeling. Familiar with BigQuery, Snowflake, and dbt for scalable analytics.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Visualization & Dashboards</h3>
-        <p>Expert in building visual analytics using Tableau, Power BI, and Streamlit. Created executive dashboards for data storytelling and decision-making.</p>
-      </div>
-      <div class="skill-card">
-        <h3>MLOps & Deployment</h3>
-        <p>Knowledge of Docker, MLflow, and cloud deployment on AWS/GCP for automating machine learning workflows.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Financial Analytics</h3>
-        <p>Certified FMVA, proficient in financial forecasting, cost modeling, and scenario analysis for growth-stage companies.</p>
+  <section id="projects">
+    <div class="container">
+      <h2 data-aos="fade-up">Projects</h2>
+      <p class="section-intro" data-aos="fade-up">Showcasing my work in data analysis and visualization.</p>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up">
+          <img src="images/mentorship.webp" alt="Mentorship Dashboard screenshot" loading="lazy">
+          <div class="project-overlay">
+            <p>Tech: Power BI, SQL | Impact: Improved engagement</p>
+          </div>
+          <h3>Mentorship Dashboard</h3>
+          <p>Built a Power BI dashboard to track mentorship program KPIs, increasing engagement by 30%.</p>
+          <div class="project-links">
+            <a href="[ACTUAL_GITHUB_URL]" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-up">
+          <img src="images/churn.webp" alt="Customer Churn Dashboard screenshot" loading="lazy">
+          <div class="project-overlay">
+            <p>Tech: Tableau, Python | Impact: Reduced churn</p>
+          </div>
+          <h3>Customer Churn Dashboard</h3>
+          <p>Developed a Tableau dashboard with Python-based predictive models to identify churn risks, reducing churn by 15%.</p>
+          <div class="project-links">
+            <a href="[ACTUAL_GITHUB_URL]" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+            <a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/CustomerChurnIntelligenceRiskBehaviorComplianceDashboard/CustomerChurnIntelligenceDashboard" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-up">
+          <img src="images/etl.webp" alt="ETL Pipeline screenshot" loading="lazy">
+          <div class="project-overlay">
+            <p>Tech: Python, SQL | Impact: Streamlined data</p>
+          </div>
+          <h3>ETL Pipeline Automation</h3>
+          <p>Automated data extraction, transformation, and loading using Python and SQL, cutting processing time by 40%.</p>
+          <div class="project-links">
+            <a href="[ACTUAL_GITHUB_URL]" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+          </div>
+        </div>
+        <div class="project-card new" data-aos="fade-up">
+          <img src="images/realtime-data.webp" alt="Real-Time Public Data Dashboard screenshot" loading="lazy">
+          <div class="project-overlay">
+            <p>Tech: Tableau, Jupyter, Python | Impact: Real-time insights</p>
+          </div>
+          <h3>Real-Time Public Data Dashboard</h3>
+          <p>Developed a Tableau dashboard integrated with a Jupyter Notebook that pulls real-time weather data from a public API, performs ETL processes, and delivers actionable insights.</p>
+          <div class="project-links">
+            <a href="[ACTUAL_GITHUB_URL]" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+            <a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/GlobalWeatherDashboard/WeatherInsightsbyCity" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
+          </div>
+        </div>
+        <div class="project-card new" data-aos="fade-up">
+          <img src="images/personal-finance.webp" alt="Personal Finance Tracker screenshot" loading="lazy">
+          <div class="project-overlay">
+            <p>Tech: Flask, Python, Plotly | Impact: Financial insights</p>
+          </div>
+          <h3>Personal Finance Tracker</h3>
+          <p>Built a Flask-based web app using Python and Plotly to track and forecast personal finances, providing interactive visualizations.</p>
+          <div class="project-links">
+            <a href="[ACTUAL_GITHUB_URL]" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-up">
+          <img src="images/inventory.webp" alt="Inventory Management Dashboard screenshot" loading="lazy">
+          <div class="project-overlay">
+            <p>Tech: Power BI, SQL | Impact: Optimized inventory</p>
+          </div>
+          <h3>Inventory Management Dashboard</h3>
+          <p>Created a Power BI dashboard to optimize inventory levels, reducing costs by 20%.</p>
+          <div class="project-links">
+            <a href="[ACTUAL_GITHUB_URL]" class="cta-button" target="_blank" rel="noopener">View My Work</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="container" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/mentorship.webp" alt="Mentorship Program Analysis screenshot" loading="lazy">
-        <div class="project-overlay">
-          <p>Tech: Python, Tableau | Impact: 25% retention boost</p>
+  <section id="certifications">
+    <div class="container">
+      <h2 data-aos="fade-up">Certifications</h2>
+      <p class="section-intro" data-aos="fade-up">Professional credentials validating my expertise.</p>
+      <div class="certifications-grid">
+        <div class="certification-card" data-aos="fade-up">
+          <h3>Python Programming</h3>
+          <p>Mastery of Python for data analysis and automation.</p>
+          <a href="[ACTUAL_LINKEDIN_LEARNING_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         </div>
-        <h3>Mentorship Program Analysis</h3>
-        <p>Analyzed the impact of a mentorship program for 500+ students using Python and Tableau, improving retention by 25% through data-driven recommendations.</p>
-        <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/mentorship-analysis" class="cta-button" target="_blank" rel="noopener">View My Work</a>
-          <a href="https://nexlify-tau.vercel.app/mentorship-case-study" class="cta-button secondary" target="_blank" rel="noopener">Case Study</a>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>Tableau</h3>
+          <p>Advanced skills in Tableau for data visualization.</p>
+          <a href="[ACTUAL_LINKEDIN_LEARNING_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>Power BI</h3>
+          <p>Proficiency in Power BI for business intelligence.</p>
+          <a href="[ACTUAL_LINKEDIN_LEARNING_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>Machine Learning</h3>
+          <p>Expertise in building predictive models.</p>
+          <a href="[ACTUAL_LINKEDIN_LEARNING_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>Six Sigma</h3>
+          <p>Process improvement and quality management.</p>
+          <a href="[ACTUAL_LINKEDIN_LEARNING_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>FMVA</h3>
+          <p>Financial modeling and valuation analyst certification.</p>
+          <a href="[ACTUAL_LINKEDIN_LEARNING_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>BIDA</h3>
+          <p>Business intelligence and data analysis certification.</p>
+          <a href="[ACTUAL_LINKEDIN_LEARNING_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>SQL</h3>
+          <p>Advanced database querying and management.</p>
+          <a href="[ACTUAL_LINKEDIN_LEARNING_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>Tableau Desktop Specialist</h3>
+          <p>Certified in Tableau for advanced dashboard creation.</p>
+          <a href="[ACTUAL_CERTIFICATE_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="certification-card" data-aos="fade-up">
+          <h3>Python for Data Science</h3>
+          <p>Proficient in Python for data analysis and machine learning.</p>
+          <a href="[ACTUAL_CERTIFICATE_URL]" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
         </div>
       </div>
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/churn.webp" alt="Customer Churn Prediction screenshot" loading="lazy">
-        <div class="project-overlay">
-          <p>Tech: scikit-learn, XGBoost, Streamlit | Accuracy: 92%</p>
-        </div>
-        <h3>Customer Churn Prediction</h3>
-        <p>Built a machine learning model (92% accuracy) using scikit-learn and XGBoost on customer behavior data. Deployed insights through Streamlit app and cloud dashboard for real-time churn alerts.</p>
-        <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/churn-prediction" class="cta-button" target="_blank" rel="noopener">View My Work</a>
-          <a href="https://your-tableau-link" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/etl.webp" alt="ETL Pipeline screenshot" loading="lazy">
-        <div class="project-overlay">
-          <p>Tech: Python, SQL, Airflow, GCP</p>
-        </div>
-        <h3>ETL Pipeline with Airflow</h3>
-        <p>Developed a robust ETL pipeline using Python, SQL, and Apache Airflow, automating data ingestion and processing for a retail analytics system hosted on GCP.</p>
-        <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/etl-pipeline" class="cta-button" target="_blank" rel="noopener">View My Work</a>
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/realtime-data.webp" alt="Real-Time Public Data Dashboard screenshot" loading="lazy">
-        <div class="project-overlay">
-          <p>Tech: Tableau, Jupyter, Python | Impact: Real-time insights</p>
-        </div>
+    </div>
+  </section>
+
+  <section id="demo-lab">
+    <div class="container">
+      <h2 data-aos="fade-up">Demo Lab</h2>
+      <p class="section-intro" data-aos="fade-up">Interactive dashboards and tools showcasing my work.</p>
+      <div class="tableau-embed" data-aos="fade-up">
         <h3>Real-Time Public Data Dashboard</h3>
-        <p>Developed a Tableau dashboard integrated with a Jupyter Notebook that pulls real-time data from a public API, performs ETL processes, and delivers actionable insights for business decision-making.</p>
-        <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/realtime-data-dashboard" class="cta-button" target="_blank" rel="noopener">View My Work</a>
-          <a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/RealTimePublicDataDashboard/Dashboard1" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
+        <div id="tableauViz"></div>
+        <p>Interact with the live dashboard on Tableau Public: <a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/GlobalWeatherDashboard/WeatherInsightsbyCity" target="_blank" rel="noopener">View on Tableau Public</a></p>
+      </div>
+      <div class="filter-container" data-aos="fade-up">
+        <label for="use-case-filter">Filter by Use Case:</label>
+        <select id="use-case-filter">
+          <option value="all">All</option>
+          <option value="Mentorship">Mentorship</option>
+          <option value="Customer Churn">Customer Churn</option>
+          <option value="ETL">ETL</option>
+          <option value="Weather Analytics">Weather Analytics</option>
+          <option value="SME Finance">SME Finance</option>
+          <option value="Inventory">Inventory</option>
+          <option value="Ecommerce">Ecommerce</option>
+          <option value="Sales">Sales</option>
+        </select>
+      </div>
+      <table class="demo-lab-table" data-aos="fade-up">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>URL</th>
+            <th>Use Case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-use-case="Mentorship">
+            <td data-label="Name">Mentorship Dashboard</td>
+            <td data-label="Description">A Power BI dashboard tracking mentorship KPIs.</td>
+            <td data-label="URL"><a href="[ACTUAL_URL]" target="_blank" rel="noopener">Visit Dashboard</a></td>
+            <td data-label="Use Case">Mentorship</td>
+          </tr>
+          <tr data-use-case="Customer Churn">
+            <td data-label="Name">Customer Churn Dashboard</td>
+            <td data-label="Description">A Tableau dashboard with predictive churn models.</td>
+            <td data-label="URL"><a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/CustomerChurnIntelligenceRiskBehaviorComplianceDashboard/CustomerChurnIntelligenceDashboard" target="_blank" rel="noopener">Visit Dashboard</a></td>
+            <td data-label="Use Case">Customer Churn</td>
+          </tr>
+          <tr data-use-case="ETL">
+            <td data-label="Name">ETL Pipeline Dashboard</td>
+            <td data-label="Description">A dashboard monitoring automated ETL processes.</td>
+            <td data-label="URL"><a href="[ACTUAL_URL]" target="_blank" rel="noopener">Visit Dashboard</a></td>
+            <td data-label="Use Case">ETL</td>
+          </tr>
+          <tr data-use-case="Weather Analytics">
+            <td data-label="Name">Real-Time Public Data Dashboard</td>
+            <td data-label="Description">A Tableau dashboard pulling real-time weather data via API.</td>
+            <td data-label="URL"><a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/GlobalWeatherDashboard/WeatherInsightsbyCity" target="_blank" rel="noopener">Visit Dashboard</a></td>
+            <td data-label="Use Case">Weather Analytics</td>
+          </tr>
+          <tr data-use-case="SME Finance">
+            <td data-label="Name">Personal Finance Tracker</td>
+            <td data-label="Description">A Flask-based app for tracking personal finances.</td>
+            <td data-label="URL"><a href="[ACTUAL_GITHUB_URL]" target="_blank" rel="noopener">View Code</a></td>
+            <td data-label="Use Case">SME Finance</td>
+          </tr>
+          <tr data-use-case="Inventory">
+            <td data-label="Name">Inventory Management Dashboard</td>
+            <td data-label="Description">A Power BI dashboard for inventory optimization.</td>
+            <td data-label="URL"><a href="[ACTUAL_URL]" target="_blank" rel="noopener">Visit Dashboard</a></td>
+            <td data-label="Use Case">Inventory</td>
+          </tr>
+          <tr data-use-case="Ecommerce">
+            <td data-label="Name">Ecommerce Executive Summary Dashboard</td>
+            <td data-label="Description">A Tableau dashboard for ecommerce performance insights.</td>
+            <td data-label="URL"><a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/EcommerceExecutiveSummaryDashboard/EcommerceIntelligenceHub" target="_blank" rel="noopener">Visit Dashboard</a></td>
+            <td data-label="Use Case">Ecommerce</td>
+          </tr>
+          <tr data-use-case="Sales">
+            <td data-label="Name">Interactive Sales Performance Dashboard</td>
+            <td data-label="Description">A Tableau dashboard analyzing sales trends.</td>
+            <td data-label="URL"><a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/InteractiveSalesPerformanceDashboardTopProductsTrendsRegionalInsights/SalesPerformanceOverview" target="_blank" rel="noopener">Visit Dashboard</a></td>
+            <td data-label="Use Case">Sales</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="container">
+      <h2 data-aos="fade-up">Resume</h2>
+      <p class="section-intro" data-aos="fade-up">A summary of my professional journey and achievements.</p>
+      <div class="resume-timeline" data-aos="fade-up">
+        <div class="timeline-item">
+          <h3>Data Analyst, ABC Corp</h3>
+          <p class="timeline-date">Jan 2022 - Present</p>
+          <p>Developed dashboards and predictive models, improving decision-making by 25%.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Financial Analyst, XYZ Ltd</h3>
+          <p class="timeline-date">Jun 2019 - Dec 2021</p>
+          <p>Optimized financial processes, reducing costs by 15%.</p>
         </div>
       </div>
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/personal-finance.webp" alt="Personal Finance Tracker screenshot" loading="lazy">
-        <div class="project-overlay">
-          <p>Tech: Flask, Python, Plotly | Impact: Financial insights</p>
-        </div>
-        <h3>Personal Finance Tracker</h3>
-        <p>Built a Flask-based web app using Python and Plotly to track and forecast personal finances, providing users with interactive visualizations for better financial planning.</p>
-        <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/personal-finance-tracker" class="cta-button" target="_blank" rel="noopener">View My Work</a>
-          <a href="https://personal-finance-tracker.streamlit.app/" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/inventory.webp" alt="Inventory Management Dashboard screenshot" loading="lazy">
-        <div class="project-overlay">
-          <p>Tech: Power BI | Impact: 15% cost reduction</p>
-        </div>
-        <h3>Inventory Management Dashboard</h3>
-        <p>Developed a Power BI dashboard for SMEs to optimize inventory, reducing costs by 15% through real-time stock tracking.</p>
-        <div class="project-links">
-          <a href="https://github.com/SamTech-crypto/inventory-dashboard" class="cta-button" target="_blank" rel="noopener">View My Work</a>
-          <a href="https://your-powerbi-link-inventory" class="cta-button secondary" target="_blank" rel="noopener">See Live</a>
-        </div>
+      <div class="resume-cta">
+        <a href="resume.pdf" class="cta-button" download>Download Resume</a>
       </div>
     </div>
   </section>
 
-  <section id="testimonials" class="container" data-aos="fade-up">
-    <h2>Testimonials</h2>
-    <p class="section-intro">What clients say about my data-driven solutions</p>
-    <div class="testimonials-slider" role="region" aria-label="Testimonials slider">
-      <button class="slider-arrow prev" aria-label="Previous testimonial" disabled>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M15 18l-6-6 6-6"/>
-        </svg>
-      </button>
-      <div class="slider-container">
-        <div class="testimonial-card" data-aos="fade-up">
-          <blockquote>
-            <p>"Samuel’s predictive analytics model reduced our customer churn by 20%. His expertise in Python and Tableau transformed our decision-making."</p>
-            <cite>Jane Doe, CEO, TechStartup</cite>
-          </blockquote>
-        </div>
-        <div class="testimonial-card" data-aos="fade-up">
-          <blockquote>
-            <p>"The Tableau dashboard Samuel built streamlined our inventory tracking, saving us 15% in operational costs. Highly recommend his services!"</p>
-            <cite>John Smith, Operations Manager, RetailCo</cite>
-          </blockquote>
-        </div>
-        <div class="testimonial-card" data-aos="fade-up">
-          <blockquote>
-            <p>"Samuel’s AI consulting helped us automate audit processes, boosting efficiency by 30%. A true data strategist!"</p>
-            <cite>Emily Brown, CFO, FinServe</cite>
-          </blockquote>
-        </div>
-      </div>
-      <button class="slider-arrow next" aria-label="Next testimonial">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M9 18l6-6-6-6"/>
-        </svg>
-      </button>
-    </div>
-  </section>
-
-  <section id="demo-lab" class="container" data-aos="fade-up">
-    <h2>Demo Lab</h2>
-    <p class="section-intro">Explore my Streamlit apps and live Tableau dashboard designed to solve real-world business challenges.</p>
-    <div class="tableau-embed" data-aos="fade-up">
-      <h3>Real-Time Public Data Dashboard</h3>
-      <div id="tableauViz"></div>
-      <p>Interact with my Tableau dashboard for real-time data analysis, showcasing insights from a public API with ETL processes handled in Jupyter Notebook. <a href="https://public.tableau.com/app/profile/samuel.mwendwa/viz/RealTimePublicDataDashboard/Dashboard1" target="_blank" rel="noopener">View Full Dashboard</a></p>
-    </div>
-    <div class="filter-container">
-      <label for="use-case-filter">Filter by Use Case: </label>
-      <select id="use-case-filter" onchange="filterApps()">
-        <option value="all">All</option>
-        <option value="Audit Automation">Audit Automation</option>
-        <option value="Customer Retention">Customer Retention</option>
-        <option value="SME Finance">SME Finance</option>
-        <option value="Risk Prediction">Risk Prediction</option>
-        <option value="Fraud Detection">Fraud Detection</option>
-      </select>
-    </div>
-    <table class="demo-lab-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-          <th>URL</th>
-          <th>Use Case</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr data-use-case="Audit Automation">
-          <td data-label="Name">Audit Workflow Optimizer</td>
-          <td data-label="Description">Automated audit risk classification and checklist streamlining using AI.</td>
-          <td data-label="URL"><a href="https://audit-workflow-app.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
-          <td data-label="Use Case">Audit Automation</td>
-        </tr>
-        <tr data-use-case="Customer Retention">
-          <td data-label="Name">Customer Churn Predictor</td>
-          <td data-label="Description">Predicts churn probability using ML models trained on behavioral and transactional data.</td>
-          <td data-label="URL"><a href="https://customerchurnpredictor-churnpredictor.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
-          <td data-label="Use Case">Customer Retention</td>
-        </tr>
-        <tr data-use-case="SME Finance">
-          <td data-label="Name">Invoice Intelligence (InvoFi)</td>
-          <td data-label="Description">Streamlines invoice validation and payment prediction using LLMs.</td>
-          <td data-label="URL"><a href="https://invofi.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
-          <td data-label="Use Case">SME Finance</td>
-        </tr>
-        <tr data-use-case="SME Finance">
-          <td data-label="Name">Personal Finance Tracker</td>
-          <td data-label="Description">A Flask-based app for tracking and forecasting personal finances with interactive Plotly visualizations.</td>
-          <td data-label="URL"><a href="https://personal-finance-tracker.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
-          <td data-label="Use Case">SME Finance</td>
-        </tr>
-        <tr data-use-case="Risk Prediction">
-          <td data-label="Name">Predictive Risk Scoring</td>
-          <td data-label="Description">Uses AI to score clients, vendors, or projects on risk exposure.</td>
-          <td data-label="URL"><a href="https://predictive-risk-app.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
-          <td data-label="Use Case">Risk Prediction</td>
-        </tr>
-        <tr data-use-case="Fraud Detection">
-          <td data-label="Name">Transaction Forecast & Anomaly Detection</td>
-          <td data-label="Description">Forecasts transactional trends and flags suspicious activity in financial operations.</td>
-          <td data-label="URL"><a href="https://transaction-forecasting-anomalies-r6jt5hdv3kvhhuze8qlgeh.streamlit.app/" target="_blank" rel="noopener">Visit App</a></td>
-          <td data-label="Use Case">Fraud Detection</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section id="certifications" class="container" data-aos="fade-up">
-    <h2>Certifications</h2>
-    <div class="certifications-grid">
-      <div class="certification-card" data-aos="fade-up">
-        <h3>Python Programming</h3>
-        <p>Mastered Python for data analysis, automation, and scripting.</p>
-        <a href="https://www.linkedin.com/learning/certificates/a025c5ef6959c28ca653658c136c347a300949b967661b5118600c1d7d9e06a1" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </div>
-      <div class="certification-card" data-aos="fade-up">
-        <h3>Tableau</h3>
-        <p>Created interactive dashboards and data visualizations.</p>
-        <a href="https://www.linkedin.com/learning/certificates/17d3d3bd41012c8af828dff4ba912546793294865da83f9175674b9b5afb5c67?trk=share_certificate" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </div>
-      <div class="certification-card" data-aos="fade-up">
-        <h3>Power BI</h3>
-        <p>Built dynamic reports and dashboards for business insights.</p>
-        <a href="https://www.linkedin.com/learning/certificates/a1d7a7f29443c51705a87a92e6e51735210cfc5c4c5ede8ac014ee9c1df30cd3?trk=share_certificate" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </div>
-      <div class="certification-card" data-aos="fade-up">
-        <h3>Machine Learning</h3>
-        <p>Developed skills in supervised and unsupervised learning, neural networks.</p>
-        <a href="https://www.linkedin.com/learning/certificates/d3f912ef32be32b64176e3e02c2c88dff195485954f117e3b1d0470fe34f82ae?trk=share_certificate" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </div>
-      <div class="certification-card" data-aos="fade-up">
-        <h3>Six Sigma</h3>
-        <p>Applied process improvement and quality control methodologies.</p>
-        <a href="https://www.linkedin.com/learning/certificates/d0b8e88387033526d54fb162c3785d2164c4fc3cc17b8162671db46aa7003550?trk=share_certificate" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </div>
-      <div class="certification-card" data-aos="fade-up">
-        <h3>Financial Modeling & Valuation Analyst (FMVA)</h3>
-        <p>Expertise in financial modeling, valuation, and advanced Excel.</p>
-        <a href="https://www.credential.net/306aa2da-cb88-4deb-9cee-25ec35ae3e78#acc.HBAFi6LN" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </div>
-      <div class="certification-card" data-aos="fade-up">
-        <h3>Business Intelligence & Data Analyst (BIDA)</h3>
-        <p>Proficient in BI tools, data visualization, and analytics.</p>
-        <a href="https://www.credential.net/a3e8af83-8287-434e-93ad-7ccedeb0354a#acc.ki1m9oQd" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </div>
-      <div class="certification-card" data-aos="fade-up">
-        <h3>SQL</h3>
-        <p>Advanced querying, database management, and optimization.</p>
-        <a href="https://www.linkedin.com/learning/certificates/7140afd065aab23b23e88261a56d08c995845fc4e3dae7ae9e8ef6e6b28ad0e1" class="cta-button" target="_blank" rel="noopener">View Certificate</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="resume" class="container" data-aos="fade-up">
-    <h2>Resume</h2>
-    <p class="section-intro">
-      A snapshot of my consulting journey in AI and data strategy, shaped by hands-on client work and expert mentorship.
-    </p>
-    <div class="resume-timeline">
-      <div class="timeline-item" data-aos="fade-up">
-        <h3>Data Science Consultant – Tech Solutions Firm</h3>
-        <p class="timeline-date">2023 – Present</p>
-        <p>
-          Delivered data consulting services to SMEs, leveraging <strong>Python</strong>, <strong>Tableau</strong>, and <strong>scikit-learn</strong> 
-          to develop predictive models and interactive dashboards. 
-          Drove a <strong>20%+ improvement</strong> in client KPIs. 
-          Guided by <strong>John</strong>, an industry expert in AI analytics.
-        </p>
-      </div>
-      <div class="timeline-item" data-aos="fade-up">
-        <h3>AI Consultant – Analytics Consultancy</h3>
-        <p class="timeline-date">2021 – 2023</p>
-        <p>
-          Designed and deployed AI solutions using <strong>Python</strong>, <strong>BigQuery</strong>, and <strong>SQL</strong>, 
-          streamlining operations and boosting data-driven decision-making. 
-          Achieved a <strong>15% gain</strong> in efficiency across client systems. 
-          Mentored by <strong>Juddy</strong>, a specialist in strategic data applications.
-        </p>
-      </div>
-      <div class="timeline-item" data-aos="fade-up">
-        <h3>Certifications & Education</h3>
-        <p class="timeline-date">2019 – 2021</p>
-        <ul role="list">
-          <li role="listitem"><a href="#certifications">FMVA® – Financial Modeling & Valuation Analyst (CFI)</a></li>
-          <li role="listitem"><a href="#certifications">BIDA™ – Business Intelligence & Data Analyst (CFI)</a></li>
-          <li role="listitem"><a href="#certifications">SQL – Certified</a></li>
-          <li role="listitem">Tableau Desktop Specialist – Tableau </li>
-          <li role="listitem">Python for Data Science – Udemy</li>
-        </ul>
-        <p>
-          Focused on <strong>data science</strong> and <strong>machine learning</strong>, with applied training in <strong>analytics</strong>, 
-          <strong>statistical modeling</strong>, and data visualization.
-        </p>
-      </div>
-    </div>
-    <div class="resume-cta">
-      <a href="files/resume.pdf" class="cta-button" download aria-label="Download full resume as PDF">Download Resume</a>
-    </div>
-  </section>
-
-  <section id="blog" class="container" data-aos="fade-up">
-    <h2>Blog</h2>
-    <p class="section-intro">Insights on data-driven solutions for SMEs</p>
-    <div class="newsletter-signup" data-aos="fade-up">
-      <h3>Stay Updated</h3>
-      <p>Subscribe to receive the latest blog posts and AI/data tips for SMEs.</p>
-      <form name="newsletter" method="POST" action="https://formspree.io/f/xwkyrzzg" class="newsletter-form" aria-label="Newsletter signup form">
-        <input type="email" name="email" placeholder="Your Email" required aria-required="true">
-        <button type="submit" class="cta-button">Subscribe</button>
+  <section id="contact">
+    <div class="container">
+      <h2 data-aos="fade-up">Get in Touch</h2>
+      <p class="section-intro" data-aos="fade-up">Let’s collaborate on your next data project.</p>
+      <form class="contact-form" data-aos="fade-up">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
       </form>
-    </div>
-    <div class="blog-grid" id="medium-feed">
-      <!-- Blog posts will be dynamically populated via JavaScript -->
-    </div>
-  </section>
-
-  <section id="faq" class="container" data-aos="fade-up">
-    <h2>Frequently Asked Questions</h2>
-    <p class="section-intro">Answers to common questions about my services and process</p>
-    <div class="faq-container">
-      <div class="faq-item" data-aos="fade-up">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq1">What types of SMEs do you work with?</button>
-        <div id="faq1" class="faq-answer" hidden>
-          <p>I work with SMEs across various industries, including retail, manufacturing, fintech, and education. My solutions are tailored to businesses with 10-500 employees looking to leverage data and AI for growth.</p>
-        </div>
-      </div>
-      <div class="faq-item" data-aos="fade-up">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq2">What is the process for starting a project?</button>
-        <div id="faq2" class="faq-answer" hidden>
-          <p>We start with a discovery call to understand your needs, followed by a proposal outlining the scope, timeline, and deliverables. Once approved, I begin development, with regular check-ins to ensure alignment.</p>
-        </div>
-      </div>
-      <div class="faq-item" data-aos="fade-up">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq3">How long does it take to build a custom AI solution?</button>
-        <div id="faq3" class="faq-answer" hidden>
-          <p>Timelines vary based on complexity, but most projects (e.g., predictive models or dashboards) take 4-12 weeks, including data preparation, development, and deployment.</p>
-        </div>
-      </div>
-      <div class="faq-item" data-aos="fade-up">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq4">Do you offer training for my team?</button>
-        <div id="faq4" class="faq-answer" hidden>
-          <p>Yes, I provide hands-on training in data analytics, visualization (Tableau, Power BI), and Python. Sessions are customized to your team’s skill level and business goals.</p>
-        </div>
-      </div>
-      <div class="faq-item" data-aos="fade-up">
-        <button class="faq-question" aria-expanded="false" aria-controls="faq5">What are the costs of your services?</button>
-        <div id="faq5" class="faq-answer" hidden>
-          <p>Costs depend on the project scope and complexity. Contact me for a free consultation, and I’ll provide a detailed quote based on your needs.</p>
-        </div>
+      <div class="contact-links" data-aos="fade-up">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/yourprofile" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </section>
-
-  <section id="contact" class="container" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <p class="section-intro">Ready to drive data-driven growth or collaborate on innovative solutions? Let’s connect!</p>
-    <form name="contact" method="POST" action="https://formspree.io/f/xblogpng" class="contact-form" aria-label="Contact form">
-      <input type="text" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]{2,50}" title="Name must be 2-50 characters" aria-required="true">
-      <input type="email" name="email" placeholder="Your Email" required aria-required="true">
-      <textarea name="message" placeholder="Your Message" required minlength="10" maxlength="500" aria-required="true"></textarea>
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
-    <div class="contact-links">
-      <a href="mailto:nexlifysolutions.team@gmail.com" title="Connect via Email">Email</a> |
-      <a href="https://www.linkedin.com/in/samuel-mwendwa/" title="Connect via LinkedIn">LinkedIn</a> |
-      <a href="https://github.com/SamTech-crypto" title="Connect via GitHub">GitHub</a>
-    </div>
-  </section>
-
-  <div class="cookie-consent" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies to enhance your experience and analyze site usage. By continuing, you agree to our <a href="/privacy-policy" target="_blank">Privacy Policy</a>.</p>
-    <div class="cookie-buttons">
-      <button id="accept-cookies" class="cta-button">Accept</button>
-      <button id="decline-cookies" class="cta-button secondary">Decline</button>
-    </div>
-  </div>
-
-  <button id="back-to-top" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 19V5M5 12l7-7 7 7"/>
-    </svg>
-  </button>
 
   <footer>
     <p>© 2025 Samuel Mwendwa. All rights reserved.</p>
   </footer>
 
-  <script>
-    AOS.init();
-    const toggleButton = document.getElementById('theme-toggle');
-    const body = document.body;
-    toggleButton.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
-    });
-    if (localStorage.getItem('theme') === 'dark') body.classList.add('dark-mode');
+  <button id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"></path>
+    </svg>
+  </button>
 
-    const contactForm = document.querySelector('.contact-form');
-    contactForm.addEventListener('submit', async e => {
-      e.preventDefault();
-      const formData = new FormData(contactForm);
-      try {
-        const response = await fetch('https://formspree.io/f/xblogpng', {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-          contactForm.reset();
-          alert('Message sent successfully!');
-        } else {
-          throw new Error('Form submission failed');
-        }
-      } catch (error) {
-        alert('Error sending message. Please try again.');
-      }
-    });
+  <div class="cookie-consent">
+    <p>We use cookies to enhance your experience. <a href="/privacy-policy" target="_blank">Learn more</a>.</p>
+    <div class="cookie-buttons">
+      <button class="cta-button">Accept</button>
+      <button class="cta-button secondary">Decline</button>
+    </div>
+  </div>
 
-    const newsletterForm = document.querySelector('.newsletter-form');
-    newsletterForm.addEventListener('submit', async e => {
-      e.preventDefault();
-      const formData = new FormData(newsletterForm);
-      try {
-        const response = await fetch('https://formspree.io/f/xwkyrzzg', {
-          method: 'POST',
-          body: formData,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-          newsletterForm.reset();
-          alert('Subscribed successfully! Check your email for confirmation.');
-        } else {
-          throw new Error('Subscription failed');
-        }
-      } catch (error) {
-        alert('Error subscribing. Please try again.');
-      }
-    });
-
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(question => {
-      question.addEventListener('click', () => {
-        const answer = question.nextElementSibling;
-        const isExpanded = question.getAttribute('aria-expanded') === 'true';
-        question.setAttribute('aria-expanded', !isExpanded);
-        answer.hidden = isExpanded;
-      });
-    });
-
-    const backToTopButton = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-      backToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
-    });
-    backToTopButton.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    function filterApps() {
-      const filterValue = document.getElementById('use-case-filter').value;
-      const rows = document.querySelectorAll('.demo-lab-table tbody tr');
-      rows.forEach(row => {
-        const useCase = row.getAttribute('data-use-case');
-        row.style.display = filterValue === 'all' || useCase === filterValue ? '' : 'none';
-      });
-    }
-
-    function initViz() {
-      const containerDiv = document.getElementById('tableauViz');
-      const vizUrl = 'https://public.tableau.com/app/profile/samuel.mwendwa/viz/RealTimePublicDataDashboard/Dashboard1';
-      const options = {
-        width: '100%',
-        height: '600px',
-        hideTabs: true,
-        hideToolbar: true,
-      };
-      new tableau.Viz(containerDiv, vizUrl, options);
-    }
-    window.addEventListener('load', initViz);
-
-    const sliderContainer = document.querySelector('.testimonials-slider .slider-container');
-    const prevArrow = document.querySelector('.slider-arrow.prev');
-    const nextArrow = document.querySelector('.slider-arrow.next');
-    let currentIndex = 0;
-
-    function updateSlider() {
-      const cardWidth = sliderContainer.querySelector('.testimonial-card').offsetWidth;
-      sliderContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-      prevArrow.disabled = currentIndex === 0;
-      nextArrow.disabled = currentIndex === sliderContainer.children.length - 1;
-    }
-
-    prevArrow.addEventListener('click', () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updateSlider();
-      }
-    });
-
-    nextArrow.addEventListener('click', () => {
-      if (currentIndex < sliderContainer.children.length - 1) {
-        currentIndex++;
-        updateSlider();
-      }
-    });
-
-    window.addEventListener('resize', updateSlider);
-
-    function loadMediumFeed() {
-      const mediumFeed = document.getElementById('medium-feed');
-      const rssUrl = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@your-username';
-      fetch(rssUrl)
-        .then(response => response.json())
-        .then(data => {
-          mediumFeed.innerHTML = '';
-          const posts = data.items.slice(0, 3);
-          posts.forEach(post => {
-            const postElement = document.createElement('div');
-            postElement.className = 'blog-card';
-            postElement.setAttribute('data-aos', 'fade-up');
-            postElement.innerHTML = `
-              <h3>${post.title}</h3>
-              <p>${post.description.replace(/<[^>]+>/g, '').substring(0, 100)}...</p>
-              <a href="${post.link}" class="cta-button" target="_blank" rel="noopener">Read More</a>
-            `;
-            mediumFeed.appendChild(postElement);
-          });
-        })
-        .catch(() => {
-          mediumFeed.innerHTML = '<p>Error loading blog posts. Please visit my Medium profile.</p>';
-        });
-    }
-    window.addEventListener('load', loadMediumFeed);
-
-    const cookieConsent = document.querySelector('.cookie-consent');
-    const acceptCookies = document.getElementById('accept-cookies');
-    const declineCookies = document.getElementById('decline-cookies');
-
-    if (!localStorage.getItem('cookieConsent')) {
-      cookieConsent.style.display = 'block';
-    }
-
-    acceptCookies.addEventListener('click', () => {
-      localStorage.setItem('cookieConsent', 'accepted');
-      cookieConsent.style.display = 'none';
-      gtag('consent', 'update', { 'analytics_storage': 'granted' });
-    });
-
-    declineCookies.addEventListener('click', () => {
-      localStorage.setItem('cookieConsent', 'declined');
-      cookieConsent.style.display = 'none';
-      gtag('consent', 'update', { 'analytics_storage': 'denied' });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
