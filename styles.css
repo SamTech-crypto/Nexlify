@@ -234,6 +234,11 @@ body.dark-mode #about .about-text p {
   gap: 30px;
 }
 
+/* NEW: Increase certifications grid gap for better spacing */
+.certifications-grid {
+  gap: 40px;
+}
+
 .skill-card, .project-card, .certification-card, .blog-card, .service-card {
   background: var(--background-light);
   padding: 20px;
@@ -281,7 +286,9 @@ body.dark-mode .service-card h3 {
 
 .project-card img, .certification-card img {
   width: 100%;
-  height: 150px;
+  /* NEW: Ensure images maintain aspect ratio */
+  height: auto;
+  max-height: 150px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -311,6 +318,22 @@ body.dark-mode .service-card h3 {
   font-size: 0.9rem;
   text-align: center;
   padding: 10px;
+}
+
+/* NEW: Add "New" badge for new projects */
+.project-card.new::before {
+  content: 'New';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--accent-teal);
+  color: var(--text-white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+body.dark-mode .project-card.new::before {
+  background: #0d1a2d;
 }
 
 .project-links {
@@ -480,6 +503,18 @@ body.dark-mode .demo-lab-table th {
 
 body.dark-mode .demo-lab-table td a {
   color: var(--accent-teal);
+}
+
+/* NEW: Highlight table rows on hover */
+.demo-lab-table tbody tr:hover {
+  background: var(--accent-teal);
+  color: var(--text-white);
+}
+.demo-lab-table tbody tr:hover td a {
+  color: var(--text-white);
+}
+body.dark-mode .demo-lab-table tbody tr:hover {
+  background: #0d1a2d;
 }
 
 .filter-container {
@@ -779,7 +814,7 @@ body.dark-mode .timeline-date {
   border-radius: 8px;
   box-shadow: var(--shadow);
   display: none;
-  z-index: 1000;
+ EXAMINE z-index: 1000;
   max-width: 500px;
   margin: 0 auto;
 }
